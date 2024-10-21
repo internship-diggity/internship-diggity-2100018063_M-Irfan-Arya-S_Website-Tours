@@ -4,6 +4,7 @@ import ImageHero_ from 'assets/images/img-hero-frame.jpg'
 import IconCities from 'assets/images/icons/Group.svg'
 import IconTraveler from 'assets/images/icons/traveler.svg'
 import IconTreasures from 'assets/images/icons/Gold.svg'
+import { Fade } from "react-awesome-reveal";
 
 import Button from 'elements/Button';
 import formatNumber from 'utils/formatNumber';
@@ -19,6 +20,7 @@ export default function Hero(props) {
 
 
   return (
+    <Fade direction='up' triggerOnce>
     <section className="container pt-4">
         <div className="row align-items-center">
             <div className="col-auto pr-5" style={{width: 530}}>
@@ -63,5 +65,6 @@ export default function Hero(props) {
             </div>
         </div>
     </section>
+    </Fade>
   )
 }

@@ -3,6 +3,7 @@ import 'assets/scss/style.scss';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from 'pages/LandingPage';
 import DetailsPage from 'pages/DetailsPage';
+import Checkout from 'pages/Checkout';
 import Example from 'pages/Examples';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/properties/:id" element={<DetailsPage />} />
+          <Route exact path="/checkout" element={<Checkout />} />
           {/* <Route path="/" element={<Example />} /> */}
         </Routes>
       </Router>
